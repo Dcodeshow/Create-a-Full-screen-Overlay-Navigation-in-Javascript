@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #F1F1F1;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+#main span {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9ED39F;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidenav .closebtn {
+    font-size: 36px;
+    border-bottom: none;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+.sidenav ul {
+    clear: both;
+}
+
+.sidenav ul li a {
+    padding: 12px 8px 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #b3ddb4;
+    text-transform: uppercase;
+}
+
+.sidenav ul li a:hover {
+    background: #6ba566;
+}

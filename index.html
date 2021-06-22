@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>D Code Show</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <h2>Sidenav Push</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo hic eveniet sed molestias error? Earum laborum voluptatum pariatur eius dicta, voluptas officia molestias asperiores veniam quas commodi accusamus voluptates similique?</p>
+        <span id="opennav">&#9776; Menu</span>
+    </div>
+
+    <div class="sidenav" id="mySidenav">
+        <a href="#" class="closebtn" id="closebtn">&times;</a>
+        <ul>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Services</a>
+            </li>
+            <li>
+                <a href="">Ptoducts</a>
+            </li>
+            <li>
+                <a href="">Clients</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <script>
+        document.getElementById("opennav").addEventListener("click", function() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.6)"
+        })
+
+        document.getElementById("closebtn").addEventListener("click", function() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = ""
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>
